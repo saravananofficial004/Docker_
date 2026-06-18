@@ -1,0 +1,7 @@
+FROM python:3.10
+WORKDIR /test_dr
+COPY req.txt .
+RUN pip install --no-cache -r req.txt
+COPY simple.py .
+CMD ["python3","simple.py"]
+
